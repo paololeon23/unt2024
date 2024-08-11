@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Preparación UNT</title>
+    <link rel="stylesheet" href="unt.css">
+    <script src="unt.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Somos UNT 2024</h1>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-message">
+            <h2>Hola Israely, esta es la preparación para que ingreses. Adjunta todo y debes estar preparado para tu formulario y entrenar.</h2>
+        </div>
+
+        <div class="upload-section">
+            <h2>Sube tus archivos y enlaces</h2>
+            <form id="uploadForm">
+                <input type="file" id="fileInput" multiple>
+                <input type="url" id="urlInput" placeholder="Enlace del banco de preguntas">
+                <button type="submit">Subir</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Formulario de Preguntas</h2>
+            <form id="questionForm">
+                <!-- Preguntas serán insertadas aquí por JavaScript -->
+            </form>
+            <button id="calculateScore">Calcular Puntaje</button>
+        </div>
+
+        <div id="scoreResult" class="score-result">
+            <!-- Resultado del puntaje será mostrado aquí por JavaScript -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Somos UNT 2024</p>
+    </footer>
+</body>
+</html>
